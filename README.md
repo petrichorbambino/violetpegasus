@@ -23,6 +23,6 @@
   </ul>
 
   <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@vielotpegasus.com.au">info@vielotpegasus.com.au</a></p>
+  <p>Email: <a href="mailto:info@violetpegasus.com.au">info@violetpegasus.com.au</a></p>
 </body>
 </html>
