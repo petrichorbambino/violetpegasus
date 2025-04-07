@@ -8,7 +8,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f5fc;
       color: #333;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 2rem;
       animation: fadeIn 1s ease-in;
@@ -34,10 +34,35 @@
     h2 {
       margin-top: 2rem;
       color: #5e3fa4;
+      text-align: center;
     }
 
-    ul {
-      line-height: 1.8;
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 280px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #5e3fa4;
     }
 
     a {
@@ -50,7 +75,8 @@
     }
 
     .contact {
-      margin-top: 2rem;
+      margin-top: 3rem;
+      text-align: center;
     }
 
     @keyframes fadeIn {
@@ -72,14 +98,29 @@
   </header>
 
   <section>
-    <h2>Services</h2>
-    <ul>
-      <li>Strategic Planning & Business Growth</li>
-      <li>Financial & Management Accounting</li>
-      <li>Tax Advisory & Compliance</li>
-      <li>Business Structuring & Succession Planning</li>
-      <li>Risk Management & Operational Improvement</li>
-    </ul>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Strategic Planning & Business Growth</h3>
+        <p>Drive sustainable growth with actionable strategy and expert guidance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Financial & Management Accounting</h3>
+        <p>Robust reporting to support better business decisions and compliance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Tax Advisory & Compliance</h3>
+        <p>Stay ahead of regulatory change while minimising risk and tax burden.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business Structuring & Succession Planning</h3>
+        <p>Set up strong foundations for growth and future transitions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Risk Management & Operational Improvement</h3>
+        <p>Optimise operations and manage exposure in a changing business landscape.</p>
+      </div>
+    </div>
   </section>
 
   <section class="contact">
