@@ -11,7 +11,6 @@
       scroll-behavior: smooth;
     }
 
-    /* 动态背景容器 */
     #particles-js {
       position: absolute;
       width: 100%;
@@ -91,17 +90,14 @@
 </head>
 <body>
 
-<!-- 粒子背景容器 -->
 <div id="particles-js"></div>
 
-<!-- 顶部区域 -->
 <section class="hero">
   <img src="logo.png" alt="Violet Pegasus Logo">
   <h1>Violet Pegasus</h1>
   <p>Strategy. Innovation. Impact.</p>
 </section>
 
-<!-- 主内容区域 -->
 <section class="content">
   <h2>Our Services</h2>
   <div class="services">
@@ -133,14 +129,35 @@
   </div>
 </section>
 
-<!-- 引入粒子背景脚本 -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script>
-  /* 粒子背景配置 */
   particlesJS("particles-js", {
     particles: {
       number: { value: 60 },
       color: { value: "#ffffff" },
       shape: { type: "circle" },
       opacity: { value: 0.5 },
-      size: {
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 120,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+</body>
+</html>
