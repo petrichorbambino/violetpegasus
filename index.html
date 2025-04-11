@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Violet Pegasus</title>
-  <style>
+<meta charset="utf-8"/>
+<title>Violet Pegasus</title>
+<style>
     html, body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Renogare', 'Segoe UI', sans-serif;
       scroll-behavior: smooth;
     }
 
@@ -28,20 +29,38 @@
       color: white;
       text-align: center;
       position: relative;
+      padding: 2rem;
     }
 
     .hero img {
-      max-width: 250px;
-      margin-bottom: 1rem;
+      max-width: 500px;
+      margin-bottom: 2rem;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0.5rem 0;
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 500px; /* match logo width */
     }
 
-    .hero p {
-      font-size: 1.2rem;
+    .nav-buttons a {
+      flex: 1;
+      margin: 0 5px;
+      padding: 0.75rem 0;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background: rgb(137, 113, 208);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background 0.2s;
+      border-radius: 0;
+    }
+
+    .nav-buttons a:hover {
+      opacity: 0.9;
+      transform: translateY(-3px);
     }
 
     .content {
@@ -65,6 +84,7 @@
     }
 
     .service-card {
+      color: rgb(137, 113, 208);
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -86,53 +106,73 @@
       color: #5e3fa4;
       text-decoration: none;
     }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .nav-buttons a {
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
 <body>
-
 <div id="particles-js"></div>
-
 <section class="hero">
-  <img src="logo.png" alt="Violet Pegasus Logo">
-  <h1>Violet Pegasus</h1>
-  <p>Strategy. Innovation. Impact.</p>
+<img alt="Violet Pegasus Logo" src="logo.png"/>
+<div class="nav-buttons">
+<a href="strategy.html">Strategy</a>
+<a href="insight.html">Insight</a>
+<a href="resilience.html">Resilience</a>
+</div>
 </section>
-
 <section class="content">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="service-card">
-      <h3>Strategic Planning & Business Growth</h3>
-      <p>Drive sustainable growth with tailored strategies.</p>
-    </div>
-    <div class="service-card">
-      <h3>Financial & Management Accounting</h3>
-      <p>Data-driven insights and reporting excellence.</p>
-    </div>
-    <div class="service-card">
-      <h3>Tax Advisory & Compliance</h3>
-      <p>Stay ahead of change while minimising risk.</p>
-    </div>
-    <div class="service-card">
-      <h3>Business Structuring & Succession Planning</h3>
-      <p>Build future-ready businesses with confidence.</p>
-    </div>
-    <div class="service-card">
-      <h3>Risk Management & Operational Improvement</h3>
-      <p>Streamline operations and enhance resilience.</p>
-    </div>
-  </div>
+<h2>Our Services</h2>
+<div class="services" style="display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1000px; margin: 2rem auto; gap: 20px;">
+<div class="service-card">
+<h3>Strategic Planning &amp; Business Growth</h3>
+<p>Drive sustainable growth with tailored strategies.</p>
+</div>
+<div class="service-card">
+<h3>Financial &amp; Management Accounting</h3>
+<p>Data-driven insights and reporting excellence.</p>
+</div>
+<div class="service-card">
+<h3>Tax Advisory &amp; Compliance</h3>
+<p>Stay ahead of change while minimising risk.</p>
+</div>
+<div class="service-card">
+<h3>Business Structuring &amp; Succession Planning</h3>
+<p>Build future-ready businesses with confidence.</p>
+</div>
+<div class="service-card">
+<h3>Risk Management &amp; Operational Improvement</h3>
+<p>Streamline operations and enhance resilience.</p>
+</div>
+<div class="service-card">
+<h3>Contact Us</h3>
+<p>
+<a href="mailto:info@violetpegasus.com.au" style="display:inline-block;padding:10px 20px;background:#5e3fa4;color:white;text-decoration:none;border-radius:5px;">
+         Send Email
+      </a>
+</p>
+</div>
+</div>
 
-  <div class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@violetpegasus.com.au">info@violetpegasus.com.au</a></p>
-  </div>
 </section>
-
 <footer>
-  &copy; 2025 Violet Pegasus. All rights reserved.
+  © 2025 Violet Pegasus. All rights reserved.
 </footer>
-  
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script>
   particlesJS("particles-js", {
